@@ -1,6 +1,6 @@
 # antifraud-landing
 информирован-вооружен, тут краткая информация о видах мошеннических схем
-<!DOCTYPE html>
+
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
@@ -45,30 +45,76 @@
             max-width: 100%;
             height: auto;
             margin: 20px 0;
+            display: block;
         }
         .btn-whatsapp {
             display: inline-block;
             background-color: #25d366;
             color: white;
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 14px 30px;
+            font-size: 18px;
             border-radius: 8px;
             text-decoration: none;
             margin-top: 20px;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+            transition: background 0.2s;
+        }
+        .btn-whatsapp:hover {
+            background-color: #1ca851;
         }
         .footer {
             text-align: center;
             padding: 20px;
             background-color: #333;
             color: white;
+            font-size: 16px;
         }
-        @media (max-width: 768px) {
-            header {
+
+        /* Адаптация для планшетов */
+        @media (max-width: 900px) {
+            .container {
+                max-width: 95vw;
                 padding: 10px;
             }
+            .section-header {
+                font-size: 20px;
+            }
+            .section-text {
+                font-size: 15px;
+            }
+        }
+
+        /* Мобильная адаптация */
+        @media (max-width: 600px) {
+            header {
+                padding: 12px 0;
+                font-size: 1em;
+            }
+            .container {
+                max-width: 100vw;
+                padding: 5px;
+            }
             section {
-                padding: 15px;
+                padding: 12px;
+                margin-bottom: 14px;
+            }
+            .section-header {
+                font-size: 18px;
+                margin-bottom: 6px;
+            }
+            .section-text {
+                font-size: 13px;
+            }
+            .btn-whatsapp {
+                font-size: 15px;
+                padding: 10px 14px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .footer {
+                font-size: 13px;
+                padding: 14px;
             }
         }
     </style>
